@@ -1,8 +1,5 @@
-# Actionview::ConsistentFallback
-Short description and motivation.
-
-## Usage
-How to use my plugin.
+# actionview-consistent\_fallback
+This `ActionView` plugin allows you to fallback to the default layout and partials when a variant doesn't have a specialized template.
 
 ## Installation
 Add this line to your application's Gemfile:
@@ -21,8 +18,17 @@ Or install it yourself as:
 $ gem install actionview-consistent_fallback
 ```
 
+## Usage
+TODO: Write how to use the plugin
+
 ## Contributing
-Contribution directions go here.
+You should follow the steps below.
+
+1. [Fork the repository](https://help.github.com/articles/fork-a-repo/)
+2. Create a feature branch: `git checkout -b add-new-feature`
+3. Commit your changes: `git commit -am 'Add new feature'`
+4. Push the branch: `git push origin add-new-feature`
+4. [Send us a pull request](https://help.github.com/articles/about-pull-requests/)
 
 ## License
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
