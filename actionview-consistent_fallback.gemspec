@@ -7,7 +7,7 @@ require "actionview/consistent_fallback/version"
 Gem::Specification.new do |s|
   s.name        = "actionview-consistent_fallback"
   s.version     = ActionView::ConsistentFallback::VERSION
-  s.authors     = ["yasaichi"]
+  s.authors     = ["Yuichi Goto"]
   s.email       = ["yasaichi@users.noreply.github.com"]
   s.homepage    = "https://github.com/yasaichi/actionview-consistent_fallback"
   s.summary     = "Consistent fallback to the default layout and partials for Action View"
