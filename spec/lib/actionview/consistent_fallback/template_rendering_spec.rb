@@ -20,7 +20,12 @@ RSpec.describe ActionView::ConsistentFallback::TemplateRendering, type: :control
   subject { response.body.split }
 
   before do
-    get :index, params: { variant: variant }
+    case Rails::VERSION::MAJOR
+    when 4
+      get :index, variant: variant
+    when 5
+      get :index, params: { variant: variant }
+    end
   end
 
   context "when a variant isn't specified" do
