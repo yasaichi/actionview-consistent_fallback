@@ -1,4 +1,9 @@
 # actionview-consistent\_fallback
+[![Gem Version](https://badge.fury.io/rb/actionview-consistent_fallback.svg)](http://badge.fury.io/rb/actionview-consistent_fallback)
+[![Build Status](https://travis-ci.org/yasaichi/actionview-consistent_fallback.svg?branch=master)](https://travis-ci.org/yasaichi/actionview-consistent_fallback)
+[![Code Climate](https://codeclimate.com/github/yasaichi/actionview-consistent_fallback/badges/gpa.svg)](https://codeclimate.com/github/yasaichi/actionview-consistent_fallback)
+[![Test Coverage](https://codeclimate.com/github/yasaichi/actionview-consistent_fallback/badges/coverage.svg)](https://codeclimate.com/github/yasaichi/actionview-consistent_fallback/coverage)
+
 This Action View plugin allows you to fallback to the default layout and partials when there is no variant template corresponding to each request variant.
 
 ## Installation
