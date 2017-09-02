@@ -1,5 +1,5 @@
 # actionview-consistent\_fallback
-This `ActionView` plugin allows you to fallback to the default layout and partials when a variant doesn't have a specialized template.
+This Action View plugin allows you to fallback to the default layout and partials when there is no variant template corresponding to each request variant.
 
 ## Installation
 Add this line to your application's Gemfile:
