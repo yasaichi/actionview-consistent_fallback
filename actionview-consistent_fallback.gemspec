@@ -6,7 +6,7 @@ require "actionview/consistent_fallback/version"
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
   s.name        = "actionview-consistent_fallback"
-  s.version     = Actionview::ConsistentFallback::VERSION
+  s.version     = ActionView::ConsistentFallback::VERSION
   s.authors     = ["yasaichi"]
   s.email       = ["yasaichi@users.noreply.github.com"]
   s.homepage    = "https://github.com/yasaichi/actionview-consistent_fallback"

@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module Actionview
+module ActionView
   module ConsistentFallback
     # Your code goes here...
   end
