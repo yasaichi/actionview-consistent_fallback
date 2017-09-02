@@ -19,6 +19,7 @@ Gem::Specification.new do |s|
   s.add_dependency "actionview", ">= 4.1.0", "< 6"
 
   s.add_development_dependency "actionpack"
+  s.add_development_dependency "appraisal"
   s.add_development_dependency "reek"
   s.add_development_dependency "rspec-rails"
   s.add_development_dependency "rubocop"
