@@ -9,9 +9,9 @@ Gem::Specification.new do |s|
   s.version     = Actionview::ConsistentFallback::VERSION
   s.authors     = ["yasaichi"]
   s.email       = ["yasaichi@users.noreply.github.com"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of Actionview::ConsistentFallback."
-  s.description = "TODO: Description of Actionview::ConsistentFallback."
+  s.homepage    = "https://github.com/yasaichi/actionview-consistent_fallback"
+  s.summary     = "Consistent fallback to the default layout and partials for non-specialized templates"
+  s.description = "This ActionView plugin allows you to fallback to the default layout and partials when a variant doesn't have a specialized template."
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
