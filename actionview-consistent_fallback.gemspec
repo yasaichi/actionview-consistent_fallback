@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.description = "This Action View plugin allows you to fallback to the default layout and partials when there is no variant template corresponding to each request variant."
   s.license     = "MIT"
 
-  s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
+  s.files = Dir["CHANGELOG.md", "lib/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
 
   s.add_dependency "actionview", ">= 4.1.0", "< 6"
 
