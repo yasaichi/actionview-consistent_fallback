@@ -4,7 +4,35 @@
 [![Code Climate](https://codeclimate.com/github/yasaichi/actionview-consistent_fallback/badges/gpa.svg)](https://codeclimate.com/github/yasaichi/actionview-consistent_fallback)
 [![Test Coverage](https://codeclimate.com/github/yasaichi/actionview-consistent_fallback/badges/coverage.svg)](https://codeclimate.com/github/yasaichi/actionview-consistent_fallback/coverage)
 
-This Action View plugin allows you to fallback to the default layout and partials when there is no variant template corresponding to each request variant.
+## Motivation
+Let's say you're making your Rails application mobile-friendly with [Action Pack Variants](http://edgeguides.rubyonrails.org/4_1_release_notes.html#action-pack-variants).  
+The application has the following directory structure:
+
+```
+app/views
+├── layouts
+│   ├── application.html+mobile.erb
+│   └── application.html.erb
+└── projects
+    ├── index.html+mobile.erb
+    ├── index.html.erb
+    └── new.html.erb
+```
+
+In this case, when you set `request.variant` to `:mobile`, Rails will render templates as follows:
+
+* `projects#index`: `index.html+mobile.erb` with `application.html+mobile.erb`
+* `projects#new`: `new.html.erb` with `application.html+mobile.erb`
+
+The second behaviour means that you have to prepare mobile versions of every template right away.  
+However, you couldn't do that when you have so many templates in your application.
+
+## Solution
+actionview-consistent\_fallback is a small, but usuful plugin for Action View.  
+The plugin allows you to fallback to the default layout and partials when there is no variant template corresponding to each request variant.
+
+In the above case, `new.html.erb` is rendered with `application.html.erb` for `mobile` variant.  
+By the consistent fallback, you can gradually roll out a mobile-version page.
 
 ## Installation
 Add this line to your application's Gemfile:
@@ -24,7 +52,7 @@ $ gem install actionview-consistent_fallback
 ```
 
 ## Usage
-TODO: Write how to use the plugin
+All you need to do is to load the gem, and then create as many variant templates as you can now :)
 
 ## Contributing
 You should follow the steps below.
